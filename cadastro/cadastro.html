@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="main-page">
+        <aside class="img-title-left">
+            <img svg="light" width="50px" src="../assets/idea-svgrepo-com.svg" alt="">
+            <img svg="form" width="50px" src="../assets/education-form-page-svgrepo-com.svg" alt="">
+            <h1><span>Cadastro</span><br> Form</h1>
+        </aside>
+
+        <main class="btns-right">
+            <header>
+                <a class="back" href="../main.html">&#60;</a>
+                <h2>Nova <span>entidade </span></h2>
+            </header>
+
+            <form class="forms">
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite um nome...">
+
+                <label for="atuacao">Campo de atuação</label>
+                <div class="select-div">
+                    <select name="" id="">
+                        <option value="" disabled selected>Escolha um campo...</option>
+                        <option value="abrigo">Abrigo de animais</option>
+                        <option value="centro-alimentacao">Centro de alimentação</option>
+                        <option value="creche">Creche</option>
+                    </select>
+                </div>
+
+                <div class="pontos">
+                    <label for="coleta">Pontos de coleta</label>
+
+                    <div class="pontos_input_plus">
+                        <input type="text" name="coleta" id="coleta" placeholder="Digite um ponto de coleta...">
+                        <button>
+                            <svg fill="#5c6bc0" width="20px" viewBox="0 0 256 256" id="Flat"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M128,23.99805a104,104,0,1,0,104,104A104.12041,104.12041,0,0,0,128,23.99805Zm40,112H136v32a8,8,0,1,1-16,0v-32H88a8,8,0,0,1,0-16h32v-32a8,8,0,0,1,16,0v32h32a8,8,0,0,1,0,16Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+
+            <a btn="cadastre" href="/ada-css/07-final-form-project/cadastro.html">Cadastrar</a>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

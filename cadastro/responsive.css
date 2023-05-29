@@ -1,17 +1,6 @@
 
 /* MEDIA QUERY */
 @media screen and (max-width: 904px) {
-    .img-title-left h1 {
-        font-size: 3.5rem;
-    }
-
-    .btns-right p {
-        font-size: 1.2rem;
-    }
-
-    .btns-right a {
-        font-size: 1.4rem;
-    }
 
     .btns-right h2 {
         font-size: 2.8rem;
@@ -24,24 +13,12 @@
         margin-right: 2rem;
     }
 
-    .btns-right [btn] {
-        /* width: 30rem; */
-    }
 }
 
 
 @media screen and (max-width: 712px) {
     .btns-right {
         box-shadow: -.2rem .2rem;
-    }
-
-    .btns-right p {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .btns-right a {
-        font-size: 1rem;
     }
 
     .btns-right h2 {
@@ -78,7 +55,9 @@
         grid-template-areas:
             ". . . . . . ."
             ". . . . . . ."
+            ". . . . . . ."
             ". img-title-left img-title-left btns-right btns-right btns-right ."
+            ". . . . . . ."
             ". . . . . . ."
             ". . . . . . ."
         ;
@@ -87,25 +66,21 @@
     .btns-right [btn] {
         font-size: 1.2rem;
         width: 90%;
+        margin-bottom: 4rem;
     }
 
-    .btns-right h2 {
-        /* font-size: 1.5rem;
-        margin: 1rem; */
-    }
-
-    .btns-right p {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .btns-right a {
-        text-align: center;
+    .btns-right header {
+        font-size: 2rem;
+        margin-top: 4rem;
     }
 
     .img-title-left h1 {
         font-size: 3.5rem;
         text-align: center;
+    }
+
+    .img-title-left {
+        margin-top: 8rem;
     }
 
     .img-title-left [svg="light"] {
@@ -114,20 +89,45 @@
     .img-title-left [svg="form"] {
         width: 150px;
     }
+
 }
 
 @media screen and (max-width: 477px) {
+    .main-page {
+        display: grid;
+        grid-template-areas:
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". img-title-left btns-right btns-right btns-right btns-right."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+            ". . . . . . ."
+        ;
+    }
     .btns-right h2 {
         font-size: 2rem;
         margin: 1rem;
     }
 
     .img-title-left [svg="light"] {
-        width: 60px;
+        width: 50px;
         margin-top: 3rem;
     }
     .img-title-left [svg="form"] {
-        width: 140px;
+        width: 120px;
     }
 
     .img-title-left h1 {

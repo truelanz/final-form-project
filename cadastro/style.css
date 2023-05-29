@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Exo+2:wght@100;200;500;700;900&family=Fjalla+One&family=Handlee&family=Inconsolata:wght@200;300;400;600;800;900&family=Indie+Flower&family=Rhodium+Libre&family=Righteous&family=Russo+One&family=Source+Code+Pro:ital,wght@0,200;0,300;0,900;1,300;1,500;1,900&family=Titan+One&display=swap'); 
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,6 +6,7 @@
 
 :root {
     font-size: 62.5%;
+    --defaut-border: 0.1rem solid black;
 }
 
 body {
@@ -17,6 +16,7 @@ body {
 
 .main-page {
     height: 100vh;
+    position: relative;
 }
 
 .img-title-left {
@@ -29,9 +29,8 @@ body {
 
 .img-title-left h1 {
     font-size: 5rem;
-    font-family: 'Exo 2', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    font-weight: bold;
+    font-family: 'Exo 2', 'Fire Mono Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 3rem;
 }
 
@@ -55,6 +54,7 @@ body {
     border: 1px solid gray;
     border-radius: 1rem;
     box-shadow: -.5rem .5rem #330D00;
+
     display: flex;
     position: relative;
     flex-direction: column;
@@ -62,6 +62,106 @@ body {
     justify-content: center;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.btns-right header {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+
+    column-gap: 2rem;
+
+    width: 90%;
+}
+
+.btns-right header .back {
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #ebd684;
+}
+
+.btns-right h2 {
+    display: inline-block;
+    font-size: 3.2rem;
+}
+
+.btns-right h2 span {
+    color: #5C6BC0;
+
+}
+
+.btns-right .forms {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 90%;
+}
+
+.btns-right label {
+    font-size: 1.4rem;
+
+    display: block;
+    margin-top: 2rem;
+}
+
+.btns-right .forms :is(input, select) {
+    width: 90%;
+    height: 4rem;
+
+    border: var(--defaut-border);
+    border-radius: .6rem;
+
+    padding: .5rem;
+}
+
+.btns-right .forms :is(input, select):focus {
+    background: #f4f0e8;
+}
+
+.btns-right .forms select {
+    appearance: none;
+}
+
+.btns-right .forms .select-div select option {
+    gap: 5rem 5rem;
+    color: aqua;
+}
+
+.btns-right form .select-div::after {
+    content: '\21B4';
+    color: #5C6BC0;
+    font-size: 2rem;
+    font-weight: bolder;
+
+    position: relative;
+    bottom: rem;
+    right: 2.2rem;
+
+    /*  z-index: 1; */
+}
+
+.pontos_input_plus {
+    /* border: 1px solid green; */
+
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.btns-right .forms .pontos button {
+
+    /* padding: .3rem; */
+    border: none;
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .btns-right [btn] {
@@ -82,49 +182,21 @@ body {
 
     text-decoration: none;
     text-align: center;
+
+    margin-top: 5rem;
 }
 
 .btns-right [btn="cadastre"]:hover {
-    background: #8191e9;
+    background: #8ee88c;
 }
-.btns-right [btn="ver"]:hover {
-    background: #ebd684;
-}
+
 .btns-right [btn="cadastre"]:active {
-    position: relative;
-    bottom: 2px;
-}
-.btns-right [btn="ver"]:active {
     position: relative;
     bottom: 2px;
 }
 
 .btns-right [btn="cadastre"] {
     background: #9FA8DA;
-}
-
-.btns-right [btn="ver"] {
-    background: #FFEEA9;
-    margin-top: 2rem;
-}
-
-.btns-right h2 {
-    margin-bottom: 7rem;
-    font-size: 3.2rem;
-}
-
-.btns-right h2 span {
-    color: #5C6BC0;
-}
-
-.btns-right p {
-    margin-top: 15rem;
-}
-
-.btns-right a {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    color: black;
 }
 
 .main-page {
