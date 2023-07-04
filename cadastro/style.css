@@ -128,8 +128,7 @@ body {
 }
 
 .btns-right .forms .select-div select option {
-    gap: 5rem 5rem;
-    color: aqua;
+    color: rgb(0, 0, 0);
 }
 
 .btns-right form .select-div::after {
@@ -161,8 +160,14 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
 }
+
+.btns-right .forms .pontos button:active {
+    border: 0.1rem solid black;
+    border-radius: 10%;
+    position: relative;
+    transform: scale(1.1);
+} 
 
 .btns-right [btn] {
     border: none;
